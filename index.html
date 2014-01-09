@@ -85,26 +85,35 @@
 -->
 <div id="impress">
 
-    <!--
-        
-        Here is where interesting thing start to happen.
-        
-        Each step of the presentation should be an element inside the `#impress` with a class name
-        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
-        the 'camera' shows them on each step of the presentation.
-        
-        Positioning information is passed through data attributes.
-        
-        In the example below we only specify x and y position of the step element with `data-x="-1000"`
-        and `data-y="-1500` attributes. This means that **the center** of the element (yes, the center)
-        will be positioned in point x = -1000px and y = -1500px of the presentation 'canvas'.
-        
-        It will not be rotated or scaled.
-        
-    -->
-    <div id="bored" class="step slide" data-x="0" data-y="0">
-        <img src="images/About-YearInReview-AR_01.jpg">
+
+    <div id="intro" class="step slide" data-x="0" data-y="0">
+        <span class="horizontal-stripe from-left"></span>
+        <span class="horizontal-stripe from-right"></span>
+        <p>
+            <img class="about" src="images/aboutcom.png" alt="About.com">
+            <span class="number">2</span>
+            <span class="red-ball">
+                <img src="images/ball.png" alt="a look back">
+                <span class="">a look back</span>
+            </span>
+            <span class="number">1</span>
+            <span class="number">3</span>
+        </p>
+        <p>
+            <span class="bottom-text">
+                fas fact:<br>
+                of our 170 current employees,<br>
+                51 are new: check out their journey<br>
+                over this past year
+            </span>
+            <span class="horizontal-stripe"></span>
+            <img src="images/arrow_right.gif">
+        </p>
+
     </div>
+
+
+
 
     <!--
         
@@ -125,8 +134,16 @@
         <img src="images/About-YearInReview-AR_02.jpg">
     </div>
 
-    <div class="step slide" data-x="1650" data-y="1600">
-        <img src="images/About-YearInReview-AR_03.jpg">
+    <div id="MediaPost" class="step slide" data-x="1650" data-y="1600">
+        <img src="images/arrow_left.gif">
+        <span class="horizontal-stripe from-left"></span>
+        <span class="horizontal-stripe top-bottom"></span>
+        <img src="images/arrow_left.gif">
+        <img src="images/slide2_01.png">
+        <img src="images/slide2_02.png">
+        <img src="images/slide2_04.png">
+        <img src="images/slide2_03.png">
+        <img src="images/slide2_05.png">
     </div>
 
     <!--
@@ -323,8 +340,13 @@ if ("ontouchstart" in document.documentElement) {
     
     For some example uses of this API check the last part of the source of impress.js where the API
     is used in event handlers.
-    
+
+
+
+
+first slide
 -->
+
 
 </body>
 </html>

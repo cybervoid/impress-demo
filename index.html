@@ -7,29 +7,29 @@
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
-    
+
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <!--
-        
+
         Impress.js doesn't depend on any external stylesheet. Script adds all styles it needs for
         presentation to work.
-        
+
         This style below contains styles only for demo presentation. Browse it to see how impress.js
         classes are used to style presentation steps, or how to apply fallback styles, but I don't want
         you to use them directly in your presentation.
-        
+
         Be creative, build your own. We don't really want all impress.js presentations to look the same,
         do we?
-        
+
         When creating your own presentation get rid of this file. Start from scratch, it's fun!
-        
+
     -->
     <link href="css/impress-demo.css" rel="stylesheet" />
-    
+
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
@@ -113,25 +113,20 @@
     </div>
 
 
-
-
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-    <div class="step slide" data-x="650" data-y="1000" data-rotate="90">
-        <img src="images/About-YearInReview-AR_02.jpg">
+    <div id="bigNews" class="step slide" data-x="650" data-y="1000" data-rotate="90">
+        <p>
+            Out <strong>big news</strong>,
+            <span class="red">our biggest numbers ever</span>
+        </p>
+        <div class="left">
+            <span class="people"></span>
+            <img src="images/big_news_quote.png"
+                 alt="Even with 89 million uniques each month, About tends to fly under the radar.">
+            <span class="people"></span>
+            <canvas>Rocket Animation</canvas>
+        </div>
+        <img class="more-visitors left" src="images/more_visitors.png"
+             alt="More visitors than Pandora, Twitter, LinkedIn, Netflix">
     </div>
 
     <div id="MediaPost" class="step slide" data-x="1650" data-y="1600">
@@ -340,13 +335,8 @@ if ("ontouchstart" in document.documentElement) {
     
     For some example uses of this API check the last part of the source of impress.js where the API
     is used in event handlers.
-
-
-
-
-first slide
+    
 -->
-
 
 </body>
 </html>

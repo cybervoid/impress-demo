@@ -496,8 +496,46 @@ body     { pointer-events: none; }
 
 .impress-not-supported .fallback-message { display: block; }
 
+#intro {
+    text-align: center;
+    color: #000;
+    padding-top: 178px;
+}
+
+#intro .number {
+    font-size: 7.5em;
+    font-weight: bold;
+    letter-spacing: -37px;
+}
+
+#intro .red-ball {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    transition: width 1s, height 1s;
+    left: 22px;
+}
+
+#intro .red-ball span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -59px;
+    color: white;
+    margin-left: -40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#intro .red-ball img {
+
+}
+
 #intro .bottom-text {
     position: relative;
+    text-transform: uppercase;
 }
 
 #intro .bottom-text .red-arrow-right {
@@ -505,11 +543,14 @@ body     { pointer-events: none; }
     width: 0;
     height: 40px;
     overflow: hidden;
-    transition: width 500ms, left 1s;
+    transition: width 350ms;
     position: absolute;
 
     -webkit-animation-duration: 850ms;
     -webkit-animation-iteration-count: infinite;
+
+    left: 737px;
+    bottom: 0;
 }
 
 #intro .bottom-text .red-arrow-right span {
@@ -521,18 +562,19 @@ body     { pointer-events: none; }
 }
 
 @-webkit-keyframes elastic {
-    0% { left: 295px; }
-    52% { left: 300px; }
-    100% { left: 295px; }
+    0% { left: 737px; }
+    52% { left: 742px; }
+    100% { left: 737px; }
 }
 
 #intro .bottom-text .horizontal-stripe {
-    bottom: -30px;
+    bottom: 7px;
+    left: 557px;
 }
 
 .horizontal-stripe {
     display: block;
-    height: 20px;
+    height: 25px;
     width: 0;
     background: #9a0000;
     transition: width 1s;
@@ -542,6 +584,8 @@ body     { pointer-events: none; }
 /*!
  Example classes - KEEP AT THE BOTTOM OF THE CSS
  */
+
+.red { color: #9a0000; }
 
 .hide { display: none; }
 

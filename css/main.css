@@ -572,6 +572,23 @@ body     { pointer-events: none; }
     left: 557px;
 }
 
+#bigNews > div {
+    width: 70%;
+    border-right: 1px solid #000;
+}
+
+#bigNews > img {
+    width: 23%;
+    margin-top: 171px;
+}
+
+#bigNews .people {
+    background: url('../images/person.png') repeat-x;
+    display: block;
+    width: 100%;
+    height: 121px;
+}
+
 .horizontal-stripe {
     display: block;
     height: 25px;
